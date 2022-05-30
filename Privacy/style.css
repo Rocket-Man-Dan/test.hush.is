@@ -1,0 +1,156 @@
+:root {
+
+    --typography-h1: 1.9375rem;
+    --typography-h2: 1.5625rem;
+    --typography-h4: 1rem;
+    --typography-p : 1rem;
+    --typography-s : .8125rem;
+    
+    --typography-h1-leading: 1.2;
+    --typography-h2-leading: 1.2;
+    --typography-h4-leading: 1.25;
+    --typography-p-leading : 1.5;
+    
+    --typography-margin-heading: 1.75rem;
+    --typography-margin-body : 1.125rem;
+    
+    --layout-container: 1.25rem;
+    --layout-grid : 3.625rem;
+    --layout-gutter : 1rem;
+    
+    --gap-cta: .75rem;
+    --gap-hero : 2rem;
+    --gap-feature: 2rem;
+    --gap-card : 1.25rem;
+    
+    --radius-button: 0rem;
+    --radius-card: 0rem;
+    
+    }
+    
+   
+
+    @font-face { font-family: 'Ubuntu Mono'; src: url('UbuntuMono.ttf') format('truetype') }
+
+
+
+    .section-footer{
+        display:flex;
+        align-items:center;
+        white-space: nowrap;
+
+        margin: 0% 0%;
+        padding: .5em 20%;
+
+        backdrop-filter: blur(5px);
+        background: rgba(0, 0, 0, .35)
+        background-repeat: repeat;
+        background-size: 8em;
+        background-image: url(../img/BG_tile_blur.png);
+     
+        
+
+    }
+
+    .header-logo{
+
+        margin-right: auto;
+
+        
+    }
+
+    .nav-buttons{
+        
+
+        margin: .5em .5em;
+        padding: 2.25% 3%;
+        padding-right: 0em;
+        margin-left: auto;
+        
+
+    }
+
+    .component-button {
+        
+
+        margin: 0em 0em;
+        padding: .5rem .7rem;
+        
+        
+
+        font-family:'Ubuntu Mono';
+        font-weight: 300;
+        font-size: 1em;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+
+        border-radius: 20px;
+        background: rgba(117, 110, 110, 0.188)
+        
+        
+        
+    }
+
+    .component-button:hover{
+        font-weight: 600;
+        
+        box-shadow:0px 0px 0px 1px rgba(255, 255, 255, 1) inset;
+        background: rgba(110, 100, 100, 0.445)
+
+    }
+
+    .hero-section{
+
+        margin: 0% 0%;
+        padding: 0% 0%;
+        color: white;
+        background-repeat: repeat;
+        background-size: 8em;
+        background-image: url(../img/BG_tile.png);
+        
+        
+    }
+
+   body{
+    margin: 0em;
+    padding: 0em;
+
+    
+    
+   }
+
+   .content-par{
+    background-repeat: repeat;
+    background-size: 8em;
+    background-image: url(../img/BG_tile_blur.png);
+    
+    
+   }
+
+   p{
+       width: 60%;
+       font-family:'Ubuntu Mono';
+       margin: 0% 10%;
+       padding: 2.5% 0% 1% 0%;
+       margin-left: auto;
+       margin-right: auto;
+       font-size: 1.35em;
+       text-align: center;
+       color: white;
+   }
+
+   .ending-par{
+    margin: 0% 10%;
+    padding: 2.5% 0% 10% 0%;
+    margin-left: auto;
+    margin-right: auto;
+   }
+
+   h1{
+    margin: 0% 0%;
+    padding: 5rem 0rem;
+    font-family:'Ubuntu Mono';
+    text-align: center;
+    font-size: 4em;
+   }
