@@ -34,13 +34,13 @@
 
 
 
-    .section-footer{
+    .section-header{
         display:flex;
         align-items:center;
         white-space: nowrap;
 
         margin: 0% 0%;
-        padding: .5em 20%;
+        padding: .25em 20%;
 
         backdrop-filter: blur(5px);
         background: rgba(0, 0, 0, .35)
@@ -53,10 +53,19 @@
     }
 
     .header-logo{
-
-        margin-right: auto;
-
         
+        margin-right: auto;
+        
+    }
+
+    .header-logo:hover{
+        
+        
+        
+        fill: black;
+        stroke-width: 8px;
+        stroke:white;
+
     }
 
     .nav-buttons{
@@ -94,37 +103,35 @@
 
     .component-button:hover{
         font-weight: 600;
-        
+
         box-shadow:0px 0px 0px 1px rgba(255, 255, 255, 1) inset;
         background: rgba(110, 100, 100, 0.445)
-
     }
 
     .hero-section{
-
         margin: 0% 0%;
         padding: 0% 0%;
+
         color: white;
         background-repeat: repeat;
         background-size: 8em;
         background-image: url(../img/BG_tile.png);
         
-        
     }
 
-   body{
-    margin: 0em;
-    padding: 0em;
+    body{
+        margin: 0em;
+        padding: 0em;
+    }
 
-    
-    
-   }
+   .page-content{
 
-   .content-par{
     background-repeat: repeat;
     background-size: 8em;
     background-image: url(../img/BG_tile_blur.png);
-    
+   }
+
+   .content-par{
     
    }
 
@@ -154,3 +161,63 @@
     text-align: center;
     font-size: 4em;
    }
+
+   .footer-copywrite{
+       padding: .75rem .5rem;
+       text-align: center;
+       color: white;
+
+       font-family:'Ubuntu Mono';
+   }
+
+
+
+
+   .container-footer-icons{
+
+    padding: .75rem .5rem;
+    text-align: center;
+
+   }
+
+   .footer-icons{
+       
+       padding: .1rem .75rem;
+       width: 2rem;
+   }
+
+   .footer-icons:hover{
+    
+    filter: invert(100%);
+    background-color: rgb(0, 0, 0);
+    border-radius: 40px;
+
+   }
+
+   .tooltip {
+    position: relative;
+    display: inline-block;
+    border-bottom: 1px dotted black;
+  }
+  
+  .tooltip {
+    font-family:'Ubuntu Mono';
+    visibility: hidden;
+    width: 120px;
+    background-color: rgb(255, 255, 255);
+    color: rgb(0, 0, 0);
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+  
+    /* Position the tooltip */
+    position: absolute;
+    z-index: 1;
+    margin-left: -5.5rem;
+    margin-top: -2.75rem;
+
+  }
+  
+  .footer-icons:hover + .tooltip {
+    visibility: visible;
+  }
