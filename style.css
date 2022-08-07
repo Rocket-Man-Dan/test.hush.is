@@ -136,11 +136,10 @@
    .grid-item-3x2{
         margin-left: auto;
         margin-right: auto;
-        background-color: #262626;
         color: aliceblue;
         text-align: center;
-        padding: 2em 2em; 
-        border-radius: 2em;
+        padding: 0em 0em; 
+        
         
    }
 
@@ -163,6 +162,39 @@
         max-width: 35%;
    }
 
+   .grid-item-button{
+        position: relative;
+        z-index: 0;
+        margin-top: -3em;
+        padding: 1em 0em;
+        border-radius: 2em;
+        background-color: #3e3e3e;
+        text-decoration: none;
+        color: white;
+        border-radius: 20px;
+
+   }
+
+   .grid-item-button:hover{
+        font-weight: 600;
+        box-shadow:0px 0px 0px 1px rgba(255, 255, 255, 1) inset;
+        background-color: #515151;
+   }
+
+   .grid-item-button-text{
+       padding-top: 1em;
+       margin-bottom: 0em;
+       text-decoration: none;
+   }
+
+   .grid-sub-item{
+        padding: 2em;
+        position: relative;
+        z-index: 1;
+        border-radius: 2em;
+        background-color: #262626;
+   }
+
    .grid-item-screenshot{
         display: inline-block;
         padding-right: 8em;
@@ -181,17 +213,6 @@
        height: 400px;
        background-color: rgb(26, 26, 26);
    }
-
-/* ------- SDL - HUSH Chat Section ------- */
-
-
-
-
-
-
-
-
-
 
 
 /* ------- Buy HUSH Section ------- */
@@ -281,6 +302,11 @@
 
     p.grid-item-desc{
         text-align: left;
+        color: #a8a8a8;
+    }
+
+    p.grid-item-button-text{
+        text-align: center;
     }
 
     p.footer-tagline{
