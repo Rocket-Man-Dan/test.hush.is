@@ -1,9 +1,9 @@
 :root {
 
-    --typography-h1: 1.9375rem;
-    --typography-h2: 1.5625rem;
-    --typography-h4: 1rem;
-    --typography-p : 1rem;
+    --typography-h1: 4rem;
+    --typography-h2: 3rem;
+    --typography-h4: 1.75rem;
+    --typography-p : 1.25em;
     --typography-s : .8125rem;
     
     --typography-h1-leading: 1.2;
@@ -23,8 +23,8 @@
     --gap-feature: 2rem;
     --gap-card : 1.25rem;
     
-    --radius-button: 0rem;
-    --radius-card: 0rem;
+    --radius-button: 2rem;
+    --radius-card: 2em;
     
     }
     
@@ -36,7 +36,101 @@
     @font-face { font-family: 'Ubuntu Mono'; src: url('UbuntuMono.ttf') format('truetype') }
 
 
+/* ------- Media Queries ------- */
+
+
+@media screen and (min-aspect-ratio: 4/3) and (max-aspect-ratio: 21/9){
+    .nav{
+        display: none;
+    }
+}
+
+@media screen and (max-aspect-ratio: 4/3){
+    .desktop-nav{
+        display: none;
+    }
+}
+
+@media only screen and (hover: none) and (pointer: coarse){
+
+}
+
+
+
 /* ------- Header ------- */
+    .sidebar-menu-container{
+        position: fixed;
+        right: 0em;
+        z-index: 5;
+    }
+
+    .nav-menu-icon{
+        display: block;
+        margin-right: 5em;
+        margin-top: 4.5em;
+        width: 4em;
+    }
+
+    .nav-btn{
+        opacity: 50%;
+        transform-origin: 2em 2em;
+        transform: rotate(90deg);
+        transition: all 100ms ease-in-out;
+    }
+
+    #nav-check{
+        display: none;
+    }
+
+    #nav-check:checked ~ .nav > .mobile-sidebar{
+        right: -20em;
+    }
+
+    #nav-check:checked ~ .nav > .sidebar-menu-container > .nav-btn{
+        transform: rotate(0deg);
+        opacity: 100%;
+    }
+
+
+    .mobile-sidebar{
+        
+        position:fixed;
+        z-index: 4;
+        right: 0em;
+        height: 100%;
+        width: 14em;
+        background-color: #2a2a2a;
+        transition: all 300ms ease-in-out;
+        box-shadow:1px 0px 0px 0px rgb(123, 123, 123) inset;
+    }
+
+    .mobile-nav-container{
+        display: grid;
+        grid-template-rows: auto auto;
+        gap: 2em;
+        margin: 0em;
+        margin-top: 10em;
+        padding: 2em;
+    }
+
+    .component-button-mobile{
+        margin: 0em 0em;
+        padding: .7rem 1rem;
+        font-family:'Ubuntu Mono';
+        font-weight: 300;
+        font-size: 1.25em;
+        text-align: center;
+        text-decoration: none;
+        color: white;
+        border-radius: var(--radius-card);
+        background: rgba(117, 110, 110, 0.188)
+    }
+
+    .component-button-mobile:hover{
+        font-weight: 600;
+        box-shadow:0px 0px 0px 1px rgba(255, 255, 255, 1) inset;
+        background: rgba(110, 100, 100, 0.445)
+    }
 
     .section-header{
         display:flex;
@@ -74,7 +168,7 @@
         text-align: center;
         text-decoration: none;
         color: white;
-        border-radius: 20px;
+        border-radius: var(--radius-card);
         background: rgba(117, 110, 110, 0.188)
     }
 
@@ -93,6 +187,7 @@
         height: 500px;
         background-image:url("img/hush.is_hero_background.png");
         background-color: rgb(26, 26, 26);
+        overflow: hidden;
     }
 
     .hero-image{
@@ -103,6 +198,7 @@
         position: relative;
         left: 50%;
         margin-left: -1250px;
+        overflow: hidden;
     }
 
 /* ------- Page & Content Sizing------- */
@@ -139,8 +235,6 @@
         color: aliceblue;
         text-align: center;
         padding: 0em 0em; 
-        
-        
    }
 
    .grid-container-2x1{
@@ -171,7 +265,7 @@
         background-color: #3e3e3e;
         text-decoration: none;
         color: white;
-        border-radius: 20px;
+        border-radius: var(--radius-card);
 
    }
 
@@ -191,7 +285,7 @@
         padding: 2em;
         position: relative;
         z-index: 1;
-        border-radius: 2em;
+        border-radius: var(--radius-card);
         background-color: #262626;
    }
 
@@ -251,7 +345,7 @@
     h1{
         font-family:'Ubuntu Mono';
         text-align: center;
-        font-size: 4em;
+        font-size: var(--typography-h1);
         color: white;
     }
 
@@ -259,7 +353,7 @@
 
         font-family:'Ubuntu Mono';
         text-align: center;
-        font-size: 3em;
+        font-size: var(--typography-h2);
         color: white;
     }
 
@@ -281,7 +375,7 @@
     h4{
         font-family:'Ubuntu Mono';
         text-align: center;
-        font-size: 1.75em;
+        font-size: var(--typography-h4);
         color: white;
     }
 
@@ -295,7 +389,7 @@
 
     p{
         font-family:'Ubuntu Mono';
-        font-size: 1.25em;
+        font-size: var(--typography-p);
         text-align: center;
         color: white;
     }
@@ -339,7 +433,7 @@
     .footer-icons:hover{
         filter: invert(100%);
         background-color: rgb(0, 0, 0);
-        border-radius: 40px;
+        border-radius: var(--radius-card);
 
     }
 
@@ -356,7 +450,7 @@
         background-color: rgb(255, 255, 255);
         color: rgb(0, 0, 0);
         text-align: center;
-        border-radius: 6px;
+        border-radius: var(--radius-card);
         padding: 5px 0;
         /* Position the tooltip */
         position: absolute;
