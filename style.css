@@ -295,6 +295,8 @@
         margin: 0em 3em;
     }
 
+
+
    .grid-item-icon{
         display: inline-block;
         padding-top: 1em;
@@ -378,8 +380,7 @@
     }
 
     .buttons-single-row.mobile{
-        width: 100%;
-        padding-bottom: 4em;
+        display: grid;
         
     }
 
@@ -390,6 +391,7 @@
     
     }
 
+
     .button-single-column{
         display: block;
         width: 50%;
@@ -397,6 +399,13 @@
         margin-right: auto;
         margin-top: 2em;
         margin-bottom: 2em;
+    }
+
+    .button-single-column.mobile{
+        display: flexbox;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 1em 2em;
     }
 
     .button-single-column.mobile.grid-1x2{
@@ -489,6 +498,11 @@
 
     p.footer-tagline{
         font-size: 1.2em;
+    }
+
+    small{
+        font-size: 1.7vmax;
+        font-size: 3vmin;
     }
 
 /* ------- Footer ------- */
