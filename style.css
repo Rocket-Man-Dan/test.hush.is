@@ -177,6 +177,39 @@
 
 /* ------- Hero Section ------- */
 
+
+    .hero-download{
+        display: flex;
+        justify-content: center;
+        width: 20%;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 3em;
+        padding: 1.5em 1em;
+    }
+
+    .hero-download.mobile{
+        width: 60%;
+        padding: 1.5em 1em;
+        border-radius: 5em;
+        font-size: 1.4em;
+        margin-top: 5em;
+    }
+
+    .hero-small{
+        display: flex;
+        justify-content: center;
+        color: #878787;
+        font-size: 1em;
+        text-align: center;
+        font-family:'Ubuntu Mono';
+        padding-top: 1em;
+    }
+
+    .hero-small.mobile{
+        font-size: 1.1em;
+    }
+
     .hero-background{
         background-repeat: repeat-x;
         background-position-x: center;
@@ -383,6 +416,8 @@
 
     .buttons-single-row.mobile{
         display: grid;
+        margin-bottom: 4em;
+        margin-top: 2em;
         
     }
 
@@ -403,16 +438,34 @@
         margin-bottom: 2em;
     }
 
+    .download-small{
+        display: flex;
+        justify-content: center;
+        color: #878787;
+        font-size: .9em;
+        text-align: center;
+        font-family:'Ubuntu Mono';
+        padding-top: 0em;
+        margin-top: -2em;
+    }
+
+    .download-small.mobile{
+        margin-top: -7.5em;
+        margin-bottom: 6em;
+    }
+
     .button-single-column.mobile{
         display: flexbox;
+        justify-content: center;
         margin-left: auto;
         margin-right: auto;
-        padding: 1em 2em;
+        padding: 1em 1em;
+        width: 80%;
     }
 
     .button-single-column.mobile.grid-1x2{
         
-        padding: 1.5em 3em;
+        padding: 1.5em 1em;
         margin-bottom: 6em;
     }
 
@@ -502,9 +555,12 @@
         font-size: 1.2em;
     }
 
+    p.p-desc.mobile{
+        margin: 0em .5em;
+    }
+
     small.mobile{
-        font-size: 1.7vmax;
-        font-size: 3vmin;
+        font-size: 1.75m;
     }
 
 /* ------- Footer ------- */
@@ -527,6 +583,12 @@
    .container-footer-icons{
         padding: .75rem .5rem;
         text-align: center;
+    }
+
+    .container-footer-icons.mobile{
+        display: grid;
+        grid-template-columns: auto auto auto;
+
     }
 
     .footer-icons{
