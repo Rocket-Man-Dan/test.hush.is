@@ -117,8 +117,9 @@
 
     .header-nav.mobile{
         position:fixed;
-        z-index: 3;
+        z-index: 4;
         width: 100%;
+        filter: drop-shadow(0em 2em 1em rgb(19, 19, 19));
     }
 
     .section-header{
@@ -135,6 +136,7 @@
 
     .section-header.mobile{
         padding: 1em 10%;
+        margin-left: 2.5em;
     }
 
     .header-logo{
