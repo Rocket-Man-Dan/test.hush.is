@@ -500,7 +500,7 @@
         font-size: 1.2em;
     }
 
-    small{
+    small.mobile{
         font-size: 1.7vmax;
         font-size: 3vmin;
     }
