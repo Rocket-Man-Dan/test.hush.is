@@ -35,31 +35,6 @@
 
     @font-face { font-family: 'Ubuntu Mono'; src: url('UbuntuMono.ttf') format('truetype') }
 
-
-/* ------- Media Queries ------- */
-
-
-@media screen and (min-aspect-ratio: 4/3) and (max-aspect-ratio: 21/9){
-    .nav{
-        display: none;
-    }
-}
-
-@media screen and (max-aspect-ratio: 4/3){
-    .desktop-nav{
-        display: none;
-    }
-    .page-content{
-        display: none;
-    }
-}
-
-@media only screen and (hover: none) and (pointer: coarse){
-
-}
-
-
-
 /* ------- Header ------- */
     .sidebar-menu-container{
         position: fixed;
@@ -69,15 +44,15 @@
 
     .nav-menu-icon{
         display: block;
-        margin-right: 5em;
-        margin-top: 4.5em;
-        width: 4em;
+        margin-right: 5.5em;
+        margin-top: 5.5em;
+        width: 2.5em;
     }
 
     .nav-btn{
-        opacity: 50%;
-        transform-origin: 2em 2em;
-        transform: rotate(90deg);
+        opacity: 100%;
+        transform-origin: 1.2em 1.2em;
+        transform: rotate(0deg);
         transition: all 100ms ease-in-out;
     }
 
@@ -86,12 +61,12 @@
     }
 
     #nav-check:checked ~ .nav > .mobile-sidebar{
-        right: -20em;
+        right: 0em;
     }
 
     #nav-check:checked ~ .nav > .sidebar-menu-container > .nav-btn{
-        transform: rotate(0deg);
-        opacity: 100%;
+        transform: rotate(90deg);
+        opacity: 50%;
     }
 
 
@@ -99,7 +74,7 @@
         
         position:fixed;
         z-index: 4;
-        right: 0em;
+        right: -20em;
         height: 100%;
         width: 14em;
         background-color: #2a2a2a;
@@ -135,7 +110,7 @@
         background: rgba(110, 100, 100, 0.445)
     }
 
-    .desktop-nav{
+    .header-nav{
         background-color: rgb(19, 19, 19);
         width: auto;
     }
@@ -200,6 +175,13 @@
         overflow: hidden;
     }
 
+    .hero-background.mobile{
+        display: flexbox;
+        margin-left: auto;
+        margin-right: auto;
+        overflow: hidden;
+    }
+
     .hero-image{
         display: block;
         height: 500px;
@@ -209,6 +191,12 @@
         left: 50%;
         margin-left: -1250px;
         overflow: hidden;
+    }
+
+    .hero-image-mobile{
+        display: inline-block;
+        width: 100%;
+
     }
 
 /* ------- Page & Content Sizing------- */
@@ -229,6 +217,12 @@
         
    }
 
+   .page-content.mobile{
+       display: flexbox;
+       width: 100%;
+       
+   }
+
 /* ------- Grids ------- */
 
    .grid-container-3x2{
@@ -239,6 +233,16 @@
         padding: -1em 2em;
         padding-top: 4em;
    }
+
+   .grid-container-3x2.mobile{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 2em;
+    padding: 8em 4em;
+    padding-top: 4em;
+    
+}
 
    .grid-item-3x2{
         margin-left: auto;
@@ -383,6 +387,10 @@
         padding-top: 5em;
     }
 
+    h2.home-heading.mobile{
+        padding-top: 4em;
+    }
+
     h4{
         font-family:'Ubuntu Mono';
         text-align: center;
@@ -473,3 +481,32 @@
     .footer-icons:hover + .tooltip {
         visibility: visible;
     }
+
+    /* ------- Media Queries ------- */
+
+
+@media screen and (min-aspect-ratio: 4/3) and (max-aspect-ratio: 21/9){
+    .nav{
+        display: none;
+    }
+    .mobile-nav{
+        display: none;
+    }
+    .mobile{
+        display: none;
+    }
+    .hero-image-mobile{
+        display: none;
+    }
+}
+
+@media screen and (max-aspect-ratio: 4/3){
+
+    .desktop{
+        display: none;
+    }
+}
+
+@media only screen and (hover: none) and (pointer: coarse){
+
+}
