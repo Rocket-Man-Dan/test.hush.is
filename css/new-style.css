@@ -404,19 +404,19 @@ input[type="radio"] ~ a label a {
 .hero-bg-lines-overlay:nth-child(4) {
     pointer-events: none;
     z-index: 1;
-    background-image: url(/graphics/svg_shapes/graphic_hero_bg_lines_overlay_1.svg);
+    background-image: url(../graphics/svg_shapes/graphic_hero_bg_lines_overlay_1.svg);
 }
 
 .hero-bg-lines-overlay:nth-child(2) {
     pointer-events: none;
     z-index: 2;
-    background-image: url(/graphics/svg_shapes/graphic_hero_bg_lines_overlay_2.svg);
+    background-image: url(../graphics/svg_shapes/graphic_hero_bg_lines_overlay_2.svg);
 }
 
 .hero-bg-lines-overlay:nth-child(3) {
     pointer-events: none;
     z-index: 9;
-    background-image: url(/graphics/svg_shapes/graphic_hero_bg_lines_overlay_3.svg);
+    background-image: url(../graphics/svg_shapes/graphic_hero_bg_lines_overlay_3.svg);
 }
 
 .hero-bg-lines {
@@ -432,7 +432,7 @@ input[type="radio"] ~ a label a {
     height: 100vh;
     background-size: 276vh;
     background-repeat: no-repeat;
-    background-image: url(/graphics/svg_shapes/graphic_hero_bg_lines.svg);
+    background-image: url(../graphics/svg_shapes/graphic_hero_bg_lines.svg);
     filter: drop-shadow( 0vh 3vh 1vh rgb(var(--color-bg-dark)));
 }
 
