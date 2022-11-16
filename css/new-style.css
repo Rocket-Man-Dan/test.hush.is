@@ -72,9 +72,9 @@ ex: animation: 2000ms cubic-bezier(.25, 0.1, 0, 1) 0s 1 slideInTop; ✍️ */
 /* ●============ Overrides =============● */
 /* ----- Fonts ----- */
 @font-face { font-family: 'Ubuntu Mono';
-    src: url('/fonts/UbuntuMono.ttf') format('truetype') }
+    src: url('../fonts/UbuntuMono.ttf') format('truetype') }
 @font-face { font-family: 'Ubuntu Mono Light';
-    src: url('/fonts/Ubuntu-L.ttf') format('truetype') }
+    src: url('../fonts/Ubuntu-L.ttf') format('truetype') }
 
 /* ----- Tags ----- */
 *::-webkit-scrollbar {
